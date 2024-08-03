@@ -1,4 +1,5 @@
 const app = require('./app')
+const fs = require('fs');
 
 // console.log('sourav');
 
@@ -29,12 +30,15 @@ const app = require('./app')
 //     console.log(i);
 // }
 
- let arr = [10,20,30,40,50,10,10,50,20];
-// console.log(arr);
-// console.log(arr[2])
+//  let arr = [10,20,30,40,50,10,10,50,20];
+// // console.log(arr);
+// // console.log(arr[2])
 
-// console.log(app)
- let r = arr.filter((item)=>{
-    return item>40
- })
- console.log(r);
+// // console.log(app)
+//  let r = arr.filter((item)=>{
+//     return item>40
+//  })
+//  console.log(r);
+
+fs.writeFileSync('file.txt','hello world');
+console.log(__filename);
